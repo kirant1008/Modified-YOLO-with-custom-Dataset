@@ -1,0 +1,5 @@
+classes = 2
+train = /home/kt108/OIDv4_ToolKit/OID/Dataset/train/Person_Dog//train.txt
+valid = /home/kt108/OIDv4_ToolKit/OID/Dataset/train/Person_Dog//test.txt
+names = /home/kt108/OIDv4_ToolKit/OID/Dataset/train/Person_Dog//classes.names
+backup = backup
