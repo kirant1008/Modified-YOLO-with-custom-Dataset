@@ -70,7 +70,7 @@ model.train()
 
 # Get dataloader
 dataloader = torch.utils.data.DataLoader(
-    ListDataset(train_path), batch_size=opt.batch_size, shuffle=False, num_workers=opt.n_cpu
+    ListDataset(train_path), batch_size=opt.batch_size, shuffle=True, num_workers=opt.n_cpu
 )
 # it = iter(dataloader)
 # _, img, label = next(it)

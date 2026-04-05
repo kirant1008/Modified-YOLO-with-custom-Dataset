@@ -197,8 +197,8 @@ def build_targets(
     ty = torch.zeros(nB, nA, nG, nG)
     tw = torch.zeros(nB, nA, nG, nG)
     th = torch.zeros(nB, nA, nG, nG)
-    tconf = torch.ByteTensor(nB, nA, nG, nG).fill_(0)
-    tcls = torch.ByteTensor(nB, nA, nG, nG, nC).fill_(0)
+    tconf = torch.zeros(nB, nA, nG, nG, dtype=torch.bool)
+    tcls = torch.zeros(nB, nA, nG, nG, nC, dtype=torch.bool)
 
     nGT = 0
     nCorrect = 0
