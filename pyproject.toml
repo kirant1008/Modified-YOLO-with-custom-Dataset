@@ -1,0 +1,17 @@
+[project]
+name = "modified-yolo-with-custom-dataset"
+version = "0.1.0"
+description = "Modified YOLOv3 object detection and tracking with custom dataset"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=1.9",
+    "torchvision",
+    "numpy",
+    "Pillow",
+    "scikit-image",
+    "scipy",
+    "filterpy",
+    "numba",
+    "opencv-python",
+    "matplotlib",
+]

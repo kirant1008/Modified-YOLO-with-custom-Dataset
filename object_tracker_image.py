@@ -31,7 +31,7 @@ model.eval()
 # from torchsummary import summary
 # print(summary(model,input_size = (3, 416, 416)))
 classes = ['Person','Dog']
-Tensor = torch.cuda.FloatTensor
+Tensor = torch.cuda.FloatTensor if cuda else torch.FloatTensor
 
 def detect_image(img):
     # scale and pad image
